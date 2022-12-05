@@ -13,14 +13,25 @@
 </head>
 
 <body>
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="ken.jpg" alt="Smiley" width="32" height="32">
 
-    <button>Start Animation</button>
+<p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
+<p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>" alt="Smiley" width="32"
+        height="32">
+    
+    <p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
+    <p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
+<br>
+<script>
+    function bigImg(x) {
+        x.style.height = "64px";
+        x.style.width = "64px";
+    }
 
-    <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember
-        to first set the CSS position property of the element to relative, fixed, or absolute!</p>
-
-    <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
-
+    function normalImg(x) {
+        x.style.height = "32px";
+        x.style.width = "32px";
+    }
 </body>
 
 </html>
