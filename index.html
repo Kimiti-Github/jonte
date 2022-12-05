@@ -8,7 +8,31 @@
         </head>
     
     <body>
-        <img src="ken.jpg" style="width:40%;height:40;">
+        <h1>RESPONSIVE WEBSITE</h1>
+
+        <script>
+            $(document).ready(function () {
+                    $("p").mouseover(function () {
+                        $("p").css("background-color", "yellow");
+                    });
+                    $("p").mouseout(function () {
+                        $("p").css("background-color", "lightgray");
+                    });
+                });
+            </script>
+
+
+<body>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pretium interdum orci eget cursus. Proin ipsum felis,
+    fringilla nec molestie vel, ullamcorper mattis lacus. Vestibulum consectetur, sem ac aliquet malesuada, purus nisi
+    porttitor quam, quis molestie urna lectus eget nibh. Fusce facilisis, dolor non euismod pellentesque, est diam imperdiet
+    lacus, tristique tempus sem nisi eleifend augue. Donec iaculis scelerisque metus, hendrerit iaculis arcu convallis non.
+    Etiam tincidunt, nisi non gravida tempus, nulla dui facilisis velit, ac venenatis sapien tortor sed risus. Fusce sit
+    amet placerat ante. Fusce purus dolor, ornare quis maximus eu, hendrerit sed felis. Nam massa tellus, facilisis in leo
+    aliquam, euismod pharetra lectus.</p>
+        </script>
+        <img src="camp.jpg" style="width:40%;height:40;">
     
         <p>The Type Of Cars We hire out</p>
     
@@ -19,30 +43,27 @@
             document.getElementById("demo").addEventListener("mouseout", mouseOut);
 
             function mouseOver() {
-                document.getElementById("demo").style.color = "orange";
+                document.getElementById("demo").style.color = "blue";
             }
 
             function mouseOut() {
-                document.getElementById("demo").style.color = "black";
+                document.getElementById("demo").style.color = "red";
             }
         </script>
-            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="ken.jpg" alt="ken" width="32" height="32">
-            <p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
-            <p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>" alt="Smiley" width="32" height="32">
-    
-            <p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
-            <p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
-            <br>
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="ken.jpg" alt="ken" width="50" height="50">
+            
         <script>
             function bigImg(x) {
             x.style.height = "64px";
-            x.style.width = "64px";
-    }
+            x.style.width = "64px"; 
+            }
 
         function normalImg(x) {
-            x.style.height = "32px";
-            x.style.width = "32px";
-    }
+            x.style.height = "50px";
+            x.style.width = "50px";
+
+            }
+        </script>
 
     </body>
 
